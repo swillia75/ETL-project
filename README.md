@@ -1,36 +1,35 @@
-# ETL-project
+# The Best of college football using ETL
+Project Description
 
-Team Effort
-Due to the short timeline, teamwork will be crucial to the success of this project! Work closely with your team through all phases of the project to ensure that there are no surprises at the end of the week.
-Working in a group enables you to tackle more difficult problems than you'd be able to working alone. In other words, working in a group allows you to work smart and dream big. Take advantage of it!
+Purpose:
+To locate college football data from online sources that could be manipulated for displaying useful tables 
 
-Project Proposal
-Before you start writing any code, remember that you only have one week to complete this project. View this project as a typical assignment from work. Imagine a bunch of data came in and you and your team are tasked with migrating it to a production data base.
-Take advantage of your Instructor and TA support during office hours and class project work time. They are a valuable resource and can help you stay on track.
+Extract
+Kaggle was used to locate relative sources of information. We began by pulling a CSV file that had 2019 data from 50 college football teams. Afterwards, we collected data from an online listing that included historical bowl game info (www.sports_reference.com) and the best NFL players from every college (www.bleacherreport.com). Our focus was to showcase how win/loss records correlated to performance in bowl games, while also highlighting other interesting stats. Since we wanted to include data from various sources, we parsed a listing of the best NFL players from every college football team. Ultimately, we merged college football data and the NFL listing to create a table that displayed both sets of info.
 
-Finding Data
-Your project must use 2 or more sources of data. We recommend the following sites to use as sources of data:
+Transform
+Once we found our sources for data, we used Jupyter notebook to aid in our cleaning process. The CSV file that was pulled for college football data was relatively free of errors. We formatted the wins and losses column, but no other columns were altered. Afterwards, we selected the columns that we were interested in displaying and used splitting and stripping techniques to break down the data further. Aside from splitting and stripping, we also used replacement techniques to adjust any instances of ‘Nan’. Finally, we used the skills we have learned to merge our cleaned data frames together to show stats from every school, alongside the best NFL player from each school. 
 
-
-data.world
-
-
-Kaggle
+Load
+A relational approach was chosen for loading our database, so we agreed on PgAdmin to display our info. The data we want to present is much easier to analyze with tables and figures. We also felt more comfortable using PgAdmin due to its user-friendly layout. 
 
 
-You can also use APIs or data scraped from the web. However, get approval from your instructor first. Again, there is only a week to complete this!
+Tools Required
 
-Data Cleanup & Analysis
-Once you have identified your datasets, perform ETL on the data. Make sure to plan and document the following:
+Pandas, Beautiful Soup, PostgreSQL, SQLalchemy.js, Census Bureau data
 
+Instructions
 
-The sources of data that you will extract from.
-
-
-The type of transformation needed for this data (cleaning, joining, filtering, aggregating, etc).
+• Import Dependencies • Import CSV file create dataframe • Select desired columns • Scrape sports reference website for historical table • Create historical dataframe • Clean Historic data frame • Request data from bleacher report for the best nfl player from every football team • Create BeautifulSoup object • Scrape player and school from web page • Loop through list to only get players and school • Create dataframe of best nfl player from every football team • Merge clean_CFB_2019_df and clean_historic_cfb_df • Merge school_merge_df and school_player_df • Create connection to postgesql • Find Table names in database • Load final_df to postgresql
+• Load lean_CFB_2019_df to postgresql • Load clean_historic_cfb_df to postgresql • Load school_player_df to postgresql • Transform data using PostgreSQL
 
 
-The type of final production database to load the data into (relational or non-relational).
+Files
+
+CFB ETL Challenge Project.ipynb Jupyter Notebook with Pandas extraction code
 
 
-The final tables or collections that will be used in the production database
+
+Results
+
+A dataframe was created using extraction techniques in Pandas that was loaded into PostgreSQL and transformed into a table of all college football teams, their 2019, record, and the best NFL player from each school.
