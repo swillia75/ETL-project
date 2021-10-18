@@ -1,6 +1,8 @@
 # The Best of college football using ETL
 Project Description
 
+![](images/Smith-Bruce-2.jpg)
+
 Purpose:
 To locate college football data from online sources that could be manipulated for displaying useful tables 
 
@@ -28,7 +30,7 @@ Files
 
 CFB ETL Challenge Project.ipynb Jupyter Notebook with Pandas extraction code
 
-
+![](images/Henry%20Jordan.jfif)
 
 Results
 
