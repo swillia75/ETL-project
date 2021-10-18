@@ -46,3 +46,5 @@ CFB ETL Challenge Project.ipynb Jupyter Notebook with Pandas extraction code
 Results
 
 A dataframe was created using extraction techniques in Pandas that was loaded into PostgreSQL and transformed into a table of all college football teams, their 2019, record, and the best NFL player from each school.
+
+![](images/postgresql%20final.png)
