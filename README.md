@@ -30,7 +30,7 @@ Files
 
 CFB ETL Challenge Project.ipynb Jupyter Notebook with Pandas extraction code
 
-
+![](images/Henry%20Jordan.jfif)
 
 Results
 
