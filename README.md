@@ -20,7 +20,7 @@ Transform
 
 Once we found our sources for data, we used Jupyter notebook to aid in our cleaning process. The CSV file that was pulled for college football data was relatively free of errors. We formatted the wins and losses column, but no other columns were altered. Afterwards, we selected the columns that we were interested in displaying and used splitting and stripping techniques to break down the data further. Aside from splitting and stripping, we also used replacement techniques to adjust any instances of ‘Nan’. Finally, we used the skills we have learned to merge our cleaned data frames together to show stats from every school, alongside the best NFL player from each school. 
 
-![](images/Dataframe4.png)
+![](images/Dataframe%204.png)
 
 Load
 
